@@ -1,4 +1,8 @@
-1. run python manage.py start app {appname}
+0. create a new Django project
+
+django-admin startproject airline
+
+1. from inside the project folder run python manage.py start app {appname}
 
 2. edit settings.py to add the app name
 
