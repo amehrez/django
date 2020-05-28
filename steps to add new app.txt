@@ -58,3 +58,26 @@ def index(request):
 
 7. python manage.py runserver to run the server and check the code.
 
+8. Create models in the models.py
+
+from django.db import models
+
+
+
+# Create your models here.
+class Flight(models.Model):
+    origin = models.CharField(max_length=64)
+    destination = models.CharField(max_length=64)
+    duration = models.IntegerField()
+
+
+9. create migration
+
+python manage.py makemigrations
+
+10. apply migration
+
+python manage.py migrate
+
+
+
